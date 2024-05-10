@@ -1,3 +1,4 @@
 bin/
+.cache/
 Makefile
 compile_commands.json

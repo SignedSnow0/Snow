@@ -1,4 +1,4 @@
-require "ecc/ecc"
+require "External/premake5/ecc/ecc"
 
 workspace "SnowEngine"
     architecture "x64"
