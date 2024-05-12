@@ -1,4 +1,0 @@
-[submodule "Engine/External/glfw"]
-	path = Engine/External/glfw
-	url = git@github.com:SignedSnow0/glfw.git
-	branch = latest
