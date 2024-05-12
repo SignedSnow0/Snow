@@ -13,11 +13,14 @@ project "SnowEngine"
     includedirs
     {
         "Source/",
+        "%{VULKAN_SDK}/Include/",
+        "External/glfw/include/"
     }
 
     links
     {
         "%{VULKAN_SDK}/Lib/vulkan-1.lib",
+        "GLFW"
     }
 
     filter "configurations:Debug"

@@ -1,7 +1,27 @@
-#include <iostream>
+#include "Graphics/Vulkan/Core.h"
+#include "Graphics/Window.h"
+#include <SnowEngine.h>
+
+void Initialize() {
+    SnowEngine::Window::Initialize();
+    SnowEngine::VulkanSystem::Initialize();
+}
+
+void Shutdown() {
+    SnowEngine::VulkanSystem::Shutdown();
+    SnowEngine::Window::Shutdown();
+}
 
 int main() {
-    std::cout << "Hello world!" << std::endl;
+    Initialize();
+
+    SnowEngine::Window* window = SnowEngine::Window::CreateWindow("SnowEngine", 1280, 720);
+
+    while (!window->IsClosing());
+
+    delete window;
+
+    Shutdown();
 
     return 0;
 }
