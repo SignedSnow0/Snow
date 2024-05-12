@@ -6,3 +6,6 @@ workspace "SnowEngine"
 
 include "Engine"
 include "Editor"
+
+group "External"
+    include "Engine/External/glfw"

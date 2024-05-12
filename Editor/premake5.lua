@@ -10,15 +10,20 @@ project "SnowEditor"
 
     files { "Source/**.h", "Source/**.cpp" }
 
-    links 
+    VULKAN_SDK = os.getenv("VULKAN_SDK")
+
+    links
     {
-        "SnowEngine"
+        "SnowEngine",
+        "GLFW",
     }
 
     includedirs
     {
         "Source/",
-        "%{wks.location}/Engine/Source/"
+        "%{wks.location}/Engine/Source/",
+        "%{VULKAN_SDK}/Include/",
+        "%{wks.location}/Engine/External/glfw/include/"
     }
 
     filter "configurations:Debug"
