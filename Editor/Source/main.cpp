@@ -17,7 +17,9 @@ int main() {
 
     SnowEngine::Window* window = SnowEngine::Window::CreateWindow("SnowEngine", 1280, 720);
 
-    while (!window->IsClosing());
+    while (!window->IsClosing()) {
+        SnowEngine::Window::PollEvents();
+    }
 
     delete window;
 

@@ -106,7 +106,7 @@ namespace SnowEngine {
             const char* layer = layers.at(i);
             b8 found{ false };
 
-            for (const auto availableLayer : availableLayers) {
+            for (const auto& availableLayer : availableLayers) {
                 if (strcmp(layer, availableLayer.layerName) == 0) {
                     found = true;
                     break;

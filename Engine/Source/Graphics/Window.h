@@ -9,6 +9,7 @@ namespace SnowEngine {
         static b8 Initialize();
         static void Shutdown();
         static Window* CreateWindow(const std::string& title, u32 width, u32 height);
+        static void PollEvents();
 
         b8 IsClosing() const;
 

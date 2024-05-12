@@ -24,6 +24,8 @@ namespace SnowEngine {
         return new Window(handle);
     }
 
+    void Window::PollEvents() { glfwPollEvents(); }
+
     b8 Window::IsClosing() const { return glfwWindowShouldClose(mWindow); }
 
     Window::Window(GLFWwindow* handle) 
