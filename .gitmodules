@@ -1,4 +1,0 @@
-[submodule "Engine/External/glfw"]
-	path = Engine/External/glfw
-	url = https://github.com/glfw/glfw.git
-	branch = latest
